@@ -1,0 +1,799 @@
+@media screen and (min-width: 200px) and (max-width: 400px) and (orientation: portrait){
+/*Body style*/
+.body{
+    background: #7a5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Header style*/
+.header{
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.div__Header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.header__Title{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    cursor: pointer;
+}
+.title{
+    font-size: 4.5vw;
+    color: #eee;
+    margin: auto;
+}
+.header__Link{
+    height: 100%;
+    width: 70%;
+    display: flex;
+}
+.link{
+    font-size: 1.9vw;
+    color: #350;
+    margin: auto;
+    text-decoration: none;
+    background: transparent;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+.link:enabled{
+    outline: none;
+    border: 0px;
+}
+.linkSesion{
+    background: #774;
+    padding: 5px;
+    color: #7a5;
+}
+.linkCloseSesion{
+    background: #774;
+    padding: 5px;
+    color: #7a5;
+    display: none;
+}
+.linkSesion:hover{
+    color: #350
+}
+.linkCloseSesion:hover{
+    color: #350
+}
+/*Backgrounhd Image*/
+.backgroundImage{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+}
+.div_imgOne, .div_imgTwo{
+    width: 100%;
+    height: 100%;
+    background-color: #7a5;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.imgOne, .imgTwo{
+    width: 100%;
+    height: 100%;
+}
+.btnImgs{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.btn{
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+}
+.btn:enabled{
+    border: 0px;
+    outline: none;
+}
+.btn:hover{
+    color: #7a5;
+}
+.btn_ChangeImg{
+    background: #5a3;
+    color: #350;
+    font-size: 4vw;
+}
+/*About Me style*/
+.aboutMe{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.aboutTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;
+}
+.titleAbout{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;
+}
+.aboutDown__div{
+    width: 100%;
+    flex-grow: 4;
+    display: flex;
+}
+.aboutImg{
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.div_ImgAbout{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/perfil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.5px);
+}
+.div_InsertImg{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 10%;
+    bottom: 10px;
+    display: flex;
+}
+.aboutDescription{
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.div_DecriptionAbout{
+    width: 100%;
+    margin: auto;
+    font-size: 3.5vw;
+    text-align: right;
+}
+/*whyMe*/
+.whyMe{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.whyMeTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;   
+}
+.titlewhyMe{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;
+}
+.whyMeDescription{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.divImgDescription{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+.subdivImgDescipt{
+    flex-grow: 1;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.imgDivs{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*wantKnow*/
+.wantKnow{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.wantKnowTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;   
+}
+.titlewantKnow{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;   
+}
+.wantKnowDescription{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;  
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.wantKnowDescript{
+    width: 100%;
+    height: 100%;
+    font-size: 3.5vw;
+    display: flex;
+    text-align: right;
+}
+.wantKnowImg{
+    width: 30%;
+    height: 30%;
+}
+/*Products*/
+.products{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.productsTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;   
+}
+.titleproducts{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;   
+}
+.productsDescript{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;  
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.divProducts{
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+.productDiv{
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.div_imgProduct{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.subdiv_imgProduct{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.descriptProduct{
+    height: 100%;
+    width: 60%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.descript_TitleProduct{
+    width: 100%;
+    flex-grow: .5;
+}
+.descript_DescriptProduct{
+    width: 100%;
+    flex-grow: 1;
+}
+.descript_ButtonProduct{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.btnsBuy{
+    flex-grow: 1;
+    height: 100%;
+    outline: none;
+    display: none;
+}
+.btnDisabled{
+    background: #774;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    outline: none;
+    cursor: pointer;
+    border: 0px;
+}
+.btnBuy{
+    background: #350;
+    border: 0px;
+    cursor: pointer;
+    color: #eee;
+}
+.btnAdd{
+    background: #774;
+    border: 0px;
+    cursor: pointer;
+    color: #eee;
+}
+/*session*/
+.session{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.sessionTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;   
+}
+.titlesession{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;   
+}
+.sessionDescript{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;  
+    padding: 0px 130px; 
+    box-sizing: border-box;
+}
+.divSession{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3c1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px #1a0;
+}
+.divsSession{
+    width: 100%;
+    height: 33%;
+}
+.perfil{
+    padding: 0px 120px;
+    box-sizing: border-box;
+}
+.divPerfil{
+    width: 100%;
+    height: 100%;
+}
+.img_ImgPerfil{
+    width: 100%;
+    height: 100%;
+}
+.divUser{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0px;
+    text-align: center;
+    background: transparent;
+    font-size: 4.5vw;
+    color:#350;
+}
+.input::placeholder{
+    color:#350;
+}
+.buttom{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.divButtom{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.buttons{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background: #774;
+    outline: none;
+    border: 0px solid #774;
+    color: #7a5;
+    font-size: 20px;
+}
+.passLock{
+    text-decoration: none;
+    color: #350;
+    background: #7a5;
+    font-size: 3vw;
+    font-size: 2.5vw;
+}
+.passLock:hover, .passLock:hover{
+    background: #8b6;
+}
+.btnregister{
+    text-decoration: none;
+    color: #350;
+    background: #7a5;
+    font-size: 2.5vw;
+}
+.btnregister:hover, .btnregister:hover{
+    background: #8b6;
+}
+.login:hover{
+    color: #350;
+}
+/*register*/
+.register{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.registerTitle{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    box-sizing: border-box; 
+}
+.titleregister{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;  
+}
+.registerDescript{
+    width: 100%;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;  
+    padding: 0px 100px; 
+    box-sizing: border-box;
+}
+.inputRegister{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    font-size: 3.5vw;
+    box-sizing: border-box;
+    outline: none;
+    border: 0px;
+    background: transparent;
+    color:#350;
+}
+.inputRegister::placeholder{
+    color:#350;
+}
+.div_btnRegistar{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.btnReturn, .btnConfirm{
+    height: 100%;
+    flex-grow: 1;
+    border: 0px;
+    cursor: pointer;
+}
+.btnReturn{
+    background: #933;
+    font-size: 4vw;
+}
+.btnReturn:enabled{
+    border: 0px;
+    outline: none;
+}
+.btnReturn:hover{
+    background: #a44;
+}
+.btnConfirm{
+    background: #5d5;
+    font-size: 4vw;
+}
+.btnConfirm:enabled{
+    border: 0px;
+    outline: none;
+}
+.btnConfirm:hover{
+    background: #5b5;
+}
+/*buyCar*/
+.buyCar{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;   
+}
+.buyCarTitle{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    box-sizing: border-box; 
+}
+.titlebuyCar{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 3vw;  
+}
+.buyCarDescript{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    padding: 0px 100px; 
+    box-sizing: border-box;
+}
+.divisionbuyCar{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.subtitlebuyCar{
+    width: 100%;
+    height: 15%;
+    font-size: 2vw;
+    text-align: center;
+}
+.listbuyCar{
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.divPendients, .divSuccess{
+    width: 100%;
+    height: 33%;
+    display: flex;
+}
+.subdivPendient, .subdivSuccess{
+    height: 100%;
+    flex-grow: 1;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.imgPendient, .imgSuccess{
+    height: 100%;
+    width: 40%;
+}
+.imgPendient-img, .imgSuccess-img{
+    width: 100%;
+    height: 100%;
+}
+.descriptPendient, .descriptSuccess{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.titleProductPendient, .titleProductSuccess{
+    width: 100%;
+    height: 30%;
+    font-size: 1vw;
+}
+.descriptProductPendient, .descriptProductSuccess{
+    width: 100%;
+    height: 70%;
+    font-size: 1vw;
+}
+.pricePendient, .priceSuccess{
+    font-size: 1vw;
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+.h3PricePendient, .h3PriceSuccess{
+    margin-top: auto;
+    margin-left: auto;
+}
+/*alertSession*/
+.alertSession{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5a;
+    flex-direction: column; 
+    padding: 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+.alertSessionTitle{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: #7a5;
+    box-sizing: border-box;
+    display: flex;
+}
+.textalertSession{
+    text-align: center;
+    font-size: 6vw;
+    margin: 0;
+    margin: auto;
+    color: #eee;
+}
+.animationAlert{
+    animation: animationAlertSession 2.5s backwards;
+}
+@keyframes animationAlertSession{
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*registerDataStore*/
+.registerDataStore{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;   
+}
+.registerDataStoreTitle{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    box-sizing: border-box; 
+}
+.titleregisterDataStore{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 3vw;  
+}
+.registerDataStoreDescript{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.filePresentationPhoto{
+    font-size: 15px;
+    margin: auto;
+    font-weight: 10px;
+    background: #774;
+    cursor: pointer;
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 25%;
+    padding-top: .3%;
+}
+.subdivDataStoreFile{
+    width: 100%;
+    height: 10%;
+}
+.subdivDataStoreAbout, .subdivDataStoreWantKnow{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #774;
+}
+.txtDataStore{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0px;
+    text-align: center;
+    background: transparent;
+    font-size: 4.5vw;
+    color:#350;
+}
+.txtDataStore::placeholder{
+    color:#350;
+}
+.subdivDataStoreButton{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+}
+.btnSendDataStore{
+    background: #350;
+    height: 100%;
+    width: 20%;
+    font-size: 2.5vw;
+    color: #eee;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+}
+.btnSendDataStore:focus, .btnReturnDataStore:focus{
+    border: 0px;
+    outline: none;
+}
+.btnReturnDataStore{
+    background: #774;
+    height: 100%;
+    width: 20%;
+    color: #eee;
+    font-size: 2.5vw;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+}
+}

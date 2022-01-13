@@ -1,0 +1,1751 @@
+/*Body style*/
+.body{
+    background: #7a5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+/*Header style*/
+.header{
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.div__Header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.header__Title{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    cursor: pointer;
+}
+.title{
+    font-size: 4.5vw;
+    color: #350;
+    margin: auto;
+}
+.title:hover{
+    color: #7a5;
+}
+.header_Link-Navbar{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+}
+.btnNavMenu{
+    width: 100%;
+    height: 100%;
+    background: #774;
+    color: #7a5;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    font-size: 2vw;
+}
+.btnNavMenu:hover{
+    color: #350;
+}
+/*Backgrounhd Image*/
+.backgroundImage{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+}
+/*Menu style*/
+.menuBar{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+}
+.header__Link{
+    width: 100%;
+    height: 45%;
+    background-color: #7a5;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    width: 100%;
+    flex-grow: 1;
+    font-size: 2vw;
+    color: #350;
+    text-align: right;
+    text-decoration: none;
+    background: transparent;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+.link:hover{
+    background: #774;
+    color: #7a5;
+}
+.link:enabled{
+    outline: none;
+    border: 0px;
+}
+.linkSesion{
+    background: #774;
+    padding: 5px;
+    color: #7a5;
+}
+.linkCloseSesion{
+    background: #774;
+    padding: 5px;
+    color: #7a5;
+    display: none;
+}
+.linkSesion:hover{
+    color: #350
+}
+.linkCloseSesion:hover{
+    color: #350
+}
+.linkBuyCar{
+    text-align: center;
+}
+.linkBuyCar:hover{
+    background: transparent;
+}
+/*Background style*/
+.div_imgOne, .div_imgTwo, .div_imgThree{
+    width: 100%;
+    height: 100%;
+    background-color: #7a5;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.div_imgThree{
+    display: none;
+}
+.btnConversionPrice{
+    width: 98%;
+    height: 20%;
+    position: absolute;
+    outline: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    font-size: 3vw;
+    cursor: pointer;
+    top: 80%;
+    font-family: 'Lucida Sans';
+    color:rgb(123, 241, 250);
+}
+.imgOne, .imgTwo, .imgThree{
+    width: 100%;
+    height: 100%;
+}
+.btnImgs{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 20%;
+    display: flex
+}
+.btn{
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+}
+.btn:enabled{
+    border: 0px;
+    outline: none;
+}
+.btn:hover{
+    color: #7a5;
+    background: #350;
+}
+.btn_ChangeImg{
+    background: #5a3;
+    color: #350;
+    font-size: 3vw;
+}
+/*About Me style*/
+.aboutMe{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;
+}
+.aboutDown__div{
+    width: 100%;
+    flex-grow: 4;
+    display: flex;
+}
+.aboutImg{
+    height: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.div_ImgAbout{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/perfil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1.5px);
+}
+.div_InsertImg{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 10%;
+    bottom: 10px;
+    display: flex;
+}
+.aboutDescription{
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.div_DecriptionAbout{
+    width: 100%;
+    margin: auto;
+    font-size: 3.5vw;
+    text-align: right;
+}
+/*whyMe*/
+.whyMe{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.whyMeTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;   
+}
+.titlewhyMe{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;
+}
+.whyMeDescription{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.divImgDescription{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+.subdivImgDescipt{
+    flex-grow: 1;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.imgDivs{
+    width: 100%;
+    height: 80%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.descriptWyMe{
+    width: 100%;
+    height: 20%;
+    font-size: 3vw;
+    text-align: center;
+    color: #350;
+}
+.descriptWyMe p{
+    top: 0px;
+}
+/*wantKnow*/
+.wantKnow{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.wantKnowTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;   
+}
+.titlewantKnow{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;   
+}
+.wantKnowDescription{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.wantKnowDescript{
+    width: 100%;
+    height: 100%;
+    font-size: 3.5vw;
+    display: flex;
+    text-align: right;
+}
+.wantKnowImg{
+    width: 30%;
+    height: 30%;
+}
+/*Products*/
+.products{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.productsDescript{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;  
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.divProducts{
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+.productDiv{
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.div_imgProduct{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.subdiv_imgProduct{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.descriptProduct{
+    height: 100%;
+    width: 60%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.descript_TitleProduct{
+    width: 100%;
+    height: 20%;
+    font-size-adjust: 90%;
+    display: flex;
+}
+.lblTitleProduct{
+    width: 100%;
+    height: 100%;
+    font-size: 3.2vw;
+}
+.lblIdProduct{
+    width: 0px;
+    height: 0px;
+    font-size: 0vw;
+    visibility: hidden;
+    opacity: 0;
+}
+.descript_DescriptProduct{
+    width: 100%;
+    height: 60%;
+    font-size: 2.5vw;
+    font-size-adjust: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.lblDescriptionProduct{
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.div_priceProduct{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin: 0px;
+}
+.quantityProduct{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin: 0px;
+}
+.lblSignalPrice, .lblQuantityProduct{
+    width: 100%;
+    height: 100%;
+    font-size: 3vw;
+    color:#350;
+    text-align: right;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+.lblNumberPrice, .lblNumberQuantityProduct{
+    height: 100%;
+    padding-right: 5px;
+    box-sizing: border-box;
+    font-size: 2.9vw;
+}
+.descript_ButtonProduct{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.btnsBuy{
+    flex-grow: 1;
+    height: 100%;
+    outline: none;
+    color: #7a5;
+    font-size: 3vw;
+    border: 0px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+}
+.btnDisabled{
+    background: #774;
+    width: 100%;
+    height: 100%;
+    color: #7a5;
+    outline: none;
+    cursor: pointer;
+    border: 0px;
+    font-size: 3vw;
+    text-align: center;
+}
+.btnBuy{
+    background: #350;
+}
+.btnAdd{
+    background: #774;
+}
+/*Add To Car*/
+.addToCar{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5c;
+    display: none;
+}
+.div_addToCar{
+    width: 60%;
+    height: 50%;
+    background: #7a5;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.subDiv_nameProductAddToCar{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.lblNameProductAddToCar{
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: 10px;
+}
+.lblWarningLimitQuantity{
+    width: 70%;
+    height: 100%;
+    font-size: 3vw;
+    color: #350;
+    text-align: right;
+    margin-top: 10%;
+    padding: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+.animationQuantity{
+    animation: animationQuantity 2s forwards;
+}
+.infoProductAddToCar{
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.subDiv_quantityAddToCar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.lblQuuantityAddToCar{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+.lblQuuantityAddToCar p{
+    font-size: 3vw;
+    margin: auto;
+}
+.txtQuantityAddToCar{
+    width: 50%;
+    height: 100%;
+    resize: none;
+    text-align: center;
+    font-size: 3vw;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+}
+.txtQuantityAddToCar::-webkit-outer-spin-button,
+.txtQuantityAddToCar::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.txtQuantityAddToCar:enabled{
+    border: none;
+    outline: none;
+}
+.subdiv_btnsQuantityAddToCar{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.btnReturnQuantityAddToCar{
+    background: #774;
+    height: 100%;
+    width: 100%;
+    color: #eee;
+    font-size: 2.5vw;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    margin-right: auto;    
+}
+.btnReturnQuantityAddToCar:enabled{
+    border: none;
+    outline: none;
+}
+.btnAcceptQuantityAddToCar{
+    background: #350;
+    height: 100%;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #eee;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+    margin-left: auto;
+}
+.btnAcceptQuantityAddToCar:enabled{
+    border: none;
+    outline: none;
+}
+@keyframes animationQuantity{
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*buyToCar*/
+.buyToCar{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5c;
+    display: none;
+}
+.div_buyToCar{
+    width: 60%;
+    height: 50%;
+    background: #7a5;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.subDiv_nameProductBuyToCar{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.lblNameProductBuyToCar{
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: 10px;
+}
+.infoProductBuyToCar{
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.subDiv_quantityBuyToCar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.lblQuuantityBuyToCar{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+.lblQuuantityBuyToCar p{
+    font-size: 3vw;
+    margin: auto;
+}
+.txtQuantityBuyToCar{
+    width: 50%;
+    height: 100%;
+    resize: none;
+    text-align: center;
+    font-size: 3vw;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+}
+.txtQuantityBuyToCar::-webkit-outer-spin-button,
+.txtQuantityBuyToCar::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.txtQuantityBuyToCar:enabled{
+    border: none;
+    outline: none;
+}
+.subdiv_btnsQuantityBuyToCar{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.btnReturnQuantityBuyToCar{
+    background: #774;
+    height: 100%;
+    width: 100%;
+    color: #eee;
+    font-size: 2.5vw;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    margin-right: auto;    
+}
+.btnReturnQuantityBuyToCar:enabled{
+    border: none;
+    outline: none;
+}
+.btnAcceptQuantityBuyToCar{
+    background: #350;
+    height: 100%;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #eee;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+    margin-left: auto;
+}
+.btnAcceptQuantityBuyToCar:enabled{
+    border: none;
+    outline: none;
+}
+/*session*/
+.session{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;
+}
+.sessionDescript{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    padding: 0px 60px; 
+    box-sizing: border-box;
+}
+.divSession{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3c1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+.divsSession-perfil{
+    width: 100%;
+    height: 40%;
+}
+.divPerfil{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+.img_ImgPerfil{
+    margin: auto;
+    width: 40%;
+    height: 100%;
+}
+.divsSession-user{
+    height: 30%;
+    width: 100%;
+}
+.divUser{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0px;
+    text-align: center;
+    background: transparent;
+    font-size: 3.5vw;
+    color:#350;
+}
+.input::placeholder{
+    color:#350;
+}
+.divsSession-buttom{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.divButtom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.divButtonsAuxiliar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    color: #350;
+}
+.passLock{
+    width: 50%;
+    height: 100%;
+    background: #8b6;
+    color: #350;
+    outline: none;
+    border: none;
+    margin: auto;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+.passLock:hover{
+    background: #350;
+    color: #8b6;
+}
+.btnregister{
+    width: 50%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: #8b6;
+    color: #350;
+    margin: auto;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+.btnregister:hover{
+    background: #350;
+    color: #8b6;
+}
+.divButtonIn{
+    width: 100%;
+    height: 100%;
+}
+.login{
+    width: 100%;
+    height: 100%;
+    background: #350;
+    border: none;
+    outline: none;
+    font-size: 4vw;
+    color: #8b6;
+    cursor: pointer;
+}
+.login:hover{
+    background: #8b6;
+    color: #350;
+}
+/*register*/
+.register{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    background: absolute;
+    display: none;
+    flex-direction: column;
+}
+.registerTitle{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    box-sizing: border-box; 
+}
+.titleregister{
+    text-align: center;
+    margin: 0;
+    margin: auto;
+    font-size: 8vw;  
+}
+.registerDescript{
+    width: 100%;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;  
+    padding: 0px 100px; 
+    box-sizing: border-box;
+}
+.inputRegister{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    font-size: 3.5vw;
+    box-sizing: border-box;
+    outline: none;
+    border: 0px;
+    background: transparent;
+    color:#350;
+}
+.inputRegister::placeholder{
+    color:#350;
+}
+.div_btnRegistar{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.btnReturn, .btnConfirm{
+    height: 100%;
+    flex-grow: 1;
+    border: 0px;
+    cursor: pointer;
+    color:#774;
+}
+.btnReturn{
+    background: #933;
+    font-size: 4vw;
+}
+.btnReturn:enabled{
+    border: 0px;
+    outline: none;
+}
+.btnReturn:hover{
+    background: #a44;
+}
+.btnConfirm{
+    background: #5d5;
+    font-size: 4vw;
+}
+.btnConfirm:enabled{
+    border: 0px;
+    outline: none;
+}
+.btnConfirm:hover{
+    background: #5b5;
+}
+/*buyCar*/
+.buyCar{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;   
+}
+.buyCarDescript{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding: 0px 50px; 
+    box-sizing: border-box;
+}
+.divisionbuyCar{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.subtitlebuyCar{
+    width: 100%;
+    height: 10%;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.listbuyCar{
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.divPendients, .divSuccess{
+    width: 100%;
+    height: 33%;
+    display: flex;
+}
+.subdivPendient, .subdivSuccess{
+    height: 100%;
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.imgPendient, .imgSuccess{
+    height: 100%;
+    width: 30%;
+}
+.imgPendient-img, .imgSuccess-img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-origin: unset;
+}
+.descriptPendient, .descriptSuccess{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.titleProductPendient, .titleProductSuccess{
+    width: 100%;
+    height: 30%;
+    font-size: 1vw;
+}
+.titleProductPendient{
+    display: flex;
+}
+.btnDeletePendientProduct{
+    margin-left: auto;
+    background: #933;
+    border: none;
+    outline: none;
+    width: 30%;
+    height: 100%;
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: #774;
+}
+.btnDeletePendientProduct:hover{
+    background: #a44;
+}
+.descriptProductPendient, .descriptProductSuccess{
+    width: 100%;
+    height: 50%;
+    font-size: 1vw;
+}
+.divQuantityProductBuy{
+    display: flex;
+}
+.h3QuantityLabel, .h3QuantityNumber{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.h3QuantityNumber{
+    text-align: right;
+}
+.pricePendient, .priceSuccess{
+    font-size: 1vw;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.h3PricePendient, .h3PriceSuccess{
+    margin-top: auto;
+    margin-left: auto;
+}
+.totalPriceBuyCar{
+    width: 100%;
+    height: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+.subDiv_totalPriceBuyCar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.div_totalPrice, .div_btnBuyTotalPrice{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.div_totalPrice{
+    display: flex;
+    font-size: 1.5vw;
+}
+.textTotalPrice{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    top: 0px;
+}
+.btnBuyTotalPrice{
+    margin-left: auto;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #350;
+}
+/*alertSession*/
+.alertSession{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5a;
+    flex-direction: column; 
+    padding: 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+.alertSessionTitle{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: #7a5;
+    box-sizing: border-box;
+    display: flex;
+}
+.textalertSession{
+    text-align: center;
+    font-size: 6vw;
+    margin: 0;
+    margin: auto;
+    color: #eee;
+}
+.animationAlert{
+    animation: animationAlertSession 2.5s backwards;
+}
+@keyframes animationAlertSession{
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*registerDataStore*/
+.registerDataStore{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;   
+}
+.registerDataStoreDescript{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.filePresentationPhoto{
+    font-size: 15px;
+    margin: auto;
+    font-weight: 10px;
+    background: #774;
+    cursor: pointer;
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 25%;
+    padding-top: .3%;
+}
+.subdivDataStoreFile{
+    width: 100%;
+    height: 10%;
+}
+.subdivDataStoreAbout, .subdivDataStoreWantKnow{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #774;
+}
+.txtDataStore{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0px;
+    text-align: center;
+    background: transparent;
+    font-size: 4.5vw;
+    color:#350;
+}
+.txtDataStore::placeholder{
+    color:#350;
+}
+.subdivDataStoreButton{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    display: flex;
+}
+.div_labelSuccessInfoStore{
+    width: 60%;
+    height: 100%;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.labelSuccessInfoStore{
+    margin: 0px;
+    top: 0px;
+    color: #350;
+    text-decoration: underline;
+    font-size: 4vw;
+    margin-left: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+.animationLabelSuccess{
+    animation: animationLabelSuccessInserted 1.5s forwards;
+}
+.btnSendDataStore{
+    background: #350;
+    height: 100%;
+    width: 20%;
+    font-size: 2.5vw;
+    color: #eee;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+    margin-left: auto;
+}
+.btnSendDataStore:focus, .btnReturnDataStore:focus{
+    border: 0px;
+    outline: none;
+}
+.btnReturnDataStore{
+    background: #774;
+    height: 100%;
+    width: 20%;
+    color: #eee;
+    font-size: 2.5vw;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    margin-right: auto;
+}
+@keyframes animationLabelSuccessInserted {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*insertProducts*/
+.insertProducts{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;  
+}
+.div_insertProducts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.dataInsertProduct{
+    width: 100%;
+    height: 18%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.lblfileImgProduct, .fileImgProduct{
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2.5vw;
+}
+.fileImgProduct{
+    cursor: pointer;
+}
+.txtPriceProduct{
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    font-size: 2.5vw;
+    padding: 0px 10px;
+    background: none;
+    border: none;
+    text-align: center;
+    resize: none;
+}
+.txtPriceProduct:enabled{
+    border: none;
+    outline: none;
+}
+.txtNameProduct{
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    font-size: 2.5vw;
+    padding: 0px 10px;
+    background: none;
+    border: none;
+    text-align: center;
+    resize: none;
+}
+.txtNameProduct:enabled{
+    border: none;
+    outline: none;
+}
+.txtDescriptProduct{
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    font-size: 2.5vw;
+    padding: 0px 10px;
+    background: none;
+    border: none;
+    text-align: center;
+    resize: none;
+}
+.txtDescriptProduct:enabled{
+    border: none;
+    outline: none;
+}
+.txtQuantityProduct{
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    font-size: 2.5vw;
+    padding: 0px 10px;
+    background: none;
+    border: none;
+    text-align: center;
+    resize: none;
+}
+.txtQuantityProduct:enabled{
+    border: none; 
+    outline: none;
+}
+.btnInsertProduct{
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+.subdiv_btnInsertProduct{
+    width: 20%;
+    height: 100%;
+}
+.btnReturnInsertProduct{
+    background: #774;
+    height: 100%;
+    width: 100%;
+    color: #eee;
+    font-size: 2.5vw;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+    margin-right: auto;
+}
+.btnReturnInsertProduct:enabled{
+    border: none;
+    outline: none;
+}
+.btnAcceptInsertProduct{
+    background: #350;
+    height: 100%;
+    width: 100%;
+    font-size: 2.5vw;
+    color: #eee;
+    cursor: pointer;
+    border: 0px;
+    outline: none;
+    margin-left: auto;
+}
+.btnAcceptInsertProduct:enabled{
+    border: none;
+    outline: none;
+}
+.subdiv_lblInsertProduct{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+.lblSuccessInsertProduct{
+    margin: 0px;
+    top: 0px;
+    color: #350;
+    text-decoration: underline;
+    font-size: 3vw;
+    margin-left: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+.animationLabelInsertProduct{
+    animation: animationLabelInsertProduct 2s forwards;
+}
+@keyframes animationLabelInsertProduct{
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*pendientGiveProduct*/
+.pendientGiveProduct{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;     
+}
+.list_pendientGiveProduct{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;    
+}
+.div_pendientProduct{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border: 1px solid #350;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.infoPendientProduct{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    padding: 5px 10px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.lblInfoPendient{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    font-size: 2.6vw;
+}
+.checkPendientProdut{
+    width: 30%;
+    height: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    display: flex;
+}
+.btnCheckSuccessPendientProduct{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #3505;
+    cursor: pointer;
+    outline: none;
+    font-size: 5vw;
+}
+.btnCheckSuccessPendientProduct:hover{
+    background: #350a;
+}
+.btnCheckSuccessPendientProduct:enabled{
+    border: none;
+    outline: none;
+}
+.divButton_listPendient{
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+    display: flex;
+    box-sizing: border-box;
+}
+.btnReturn_pendientGiveProduct{
+    width: 20%;
+    height: 100%;
+    color:#350;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: none;
+    margin: none;
+    font-family: 4vw;
+    box-sizing: border-box;
+}
+.btnReturn_pendientGiveProduct:enabled{
+    border: none;
+    outline: none;
+}
+/*List data Month*/
+.listDataMonth{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;     
+}
+.subDiv_dataMonth{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.divMonth{
+    height: 100%;
+    flex-grow: 1;
+    border: 0px solid #350;
+    display: flex;
+}
+.divCount{
+    width: 100%;
+    margin-top: auto;
+    background: #350;
+    display: flex;
+    text-align: center;
+}
+.divCount:hover{
+    background: #774;
+    cursor: pointer;
+}
+.divCount_january{
+    height: 80%;
+}
+.divCount_february{
+    height: 50%;
+}
+.divCount_march{
+    height: 20%;
+}
+.divCount_april{
+    height: 90%;
+}
+.divCount_may{
+    height: 70%;
+}
+.divCount_june{
+    height: 10%;
+}
+.divCount_july{
+    height: 30%;
+}
+.divCount_agoust{
+    height: 65%;
+}
+.divCount_september{
+    height: 29%;
+}
+.divCount_october{
+    height: 85%;
+}
+.divCount_november{
+    height: 34%;
+}
+.divCount_december{
+    height: 27%;
+}
+.lettleMonth{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 20px;
+    font-size: 2.5vw;
+    box-sizing: border-box;
+    color:#7a5;
+}
+.subDiv_dataCount{
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+.div_btnDataMonth{
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+.btnDataMonth{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: #350;
+    font-size: 3vw;
+}
+.btnDataMonth:enabled{
+    outline: none;
+    border: none;
+}
+.div_lblDataCount{
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+.lblDataCount{
+    flex-grow: 1;
+    height: 100%;
+}
+.lblDataCount{
+    width: 100%;
+    height: 100%;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: #350;
+}
+/*divCount_dataMonth*/
+.divCount_dataMonth{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5a;
+    display: none;    
+}
+.subDiv_countDataMonth{
+    width: 50%;
+    height: 50%;
+    background: #7a5;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.dataMonth{
+    width: 100%;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3vw;
+    text-align: center;
+}
+.btnAcceptMonth{
+    background: #5a3;
+    color: #350;
+    cursor: pointer;
+}
+.btnAcceptMonth:hover{
+    color: #7a5;
+}
+/*menu Admin*/
+.menuAdmin{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    background: #7a5;
+    display: none;
+    flex-direction: column;  
+}
+.div_menuAdmin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.divitionAdmin{
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+.divMenuAdmin_donation{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.subDiv_Donation{
+    width: 100%;
+    height: 100%;
+}
+.divDonation{
+    width: 100%;
+    height: 100%;
+}
+.btnDonation{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.5vw;
+    background: #3503;
+}
+.btnDonation:enabled{
+    outline: none;
+    border: none;
+}
+.btnDonation:hover{
+    background: #3507;
+}
+.subdivDivition_admin{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.btnAdmin{
+    width: 70%;
+    height: 50%;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 3vw;
+    margin: auto;
+    cursor: pointer;
+    background: #3505;
+}
+.btnAdmin:hover{
+    background: #350a;
+}
+.btnAdmin:enabled{
+    border: none;
+    outline: none;
+}
+/*Select menu down*/
+.selectMenuDown{
+    width: 100%;
+    height: 5vh;
+    top: 93vh;
+    position: absolute;
+}
+.div_selectMenuDown{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.selectLeft, .selectRight{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.btnSelectLeft, .btnSelectRight{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:#774;
+    font-size: 2vw;
+}
+.btnSelectLeft{
+    background: #933;
+}
+.btnSelectLeft:hover{
+    background: #a44;
+}
+.btnSelectRight{
+    background: #5d5;
+}
+.btnSelectRight:hover{
+    background: #5b5;
+}
+.selectCenter{
+    flex-grow: 1;
+}

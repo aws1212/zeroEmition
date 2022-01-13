@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- header  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/style200_600.css" rel="stylesheet" type="text/css">
+    <link href="css/style600_1000.css" rel="stylesheet" type="text/css">
+    <link href="css/style1000_1400.css" rel="stylesheet" type="text/css">
+    <link href="css/style1400_1800.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/sylesJavascript.css" type="text/css" rel="stylesheet">
+    <title>ZeroEmision</title>
+
+</head>
+<!-- Body  -->
+<body class="body">
+    <!-- nav  -->
+    <header class="header">
+        <div class="div__Header">
+            <div class="header__Title">
+                <span class="title" id="btnTitle">ZeroEmision</span>
+            </div>
+        </div>
+    </header>
+    <!-- backgroundImage -->
+    <article class="backgroundImage" id="divPrincipalImage">
+        <div class="div_imgOne">
+            <img class="imgOne" src="img/electrico.png">
+        </div>
+        <div class="div_imgTwo">
+            <img class="imgTwo" src="img/combustion.png">
+        </div>
+        <div class="div_imgThree" id="div_imgThree">
+            <img class="imgThree" src="img/gracias.png">
+            <button class="btnConversionPrice">Revisar precios de conversión</button>
+        </div>
+        <div class="btnImgs">
+            <button class="btn btn_ChangeImg" id="btn_ChangeImg">Convertir</button>
+        </div>
+    </article>
+    <!--Add product to car-->
+    <article class="addToCar" id="addToCar">
+        <div class="div_addToCar">
+            <div class="subDiv_nameProductAddToCar">
+                <p class="infoProductAddToCar" id="lblInfoId"></p>
+                <p class="infoProductAddToCar" id="lblInfoImg"></p>
+                <p class="lblNameProductAddToCar" id="lblNameProductAddToCar"></p>
+                <p class="lblWarningLimitQuantity" id="lblWarningLimitAddQuantity">La cantidad está fuera de límite</p>
+                <p class="infoProductAddToCar" id="lblInfoDescript"></p>
+                <p class="infoProductAddToCar" id="lblInfoPrice"></p>
+            </div>
+            <div class="subDiv_quantityAddToCar">
+                <div class="lblQuuantityAddToCar">
+                    <p>Cantidad</p>
+                </div>
+                <input class="txtQuantityAddToCar" type="number" id="txtQuantityAddToCar" min="1" value="1">
+            </div>
+            <div class="subdiv_btnsQuantityAddToCar">
+                <button class="btnReturnQuantityAddToCar" id="btnReturnQuantityAddToCar">Cancelar</button>
+                <button class="btnAcceptQuantityAddToCar" id="btnAcceptQuantityAddToCar">Aceptar</button>
+            </div>
+        </div>
+    </article>
+    <!--Buy product to car-->
+    <article class="buyToCar" id="buyToCar">
+        <div class="div_buyToCar">
+            <div class="subDiv_nameProductBuyToCar">
+                <p class="infoProductBuyToCar" id="lblInfoIdBuy"></p>
+                <p class="infoProductBuyToCar" id="lblInfoImgBuy"></p>
+                <p class="lblNameProductBuyToCar" id="lblNameProductBuyToCar"></p>
+                <p class="lblWarningLimitQuantity" id="lblWarningLimitBuyQuantity">La cantidad está fuera de límite</p>
+                <p class="infoProductBuyToCar" id="lblInfoDescriptBuy"></p>
+                <p class="infoProductBuyToCar" id="lblInfoPriceBuy"></p>
+            </div>
+            <div class="subDiv_quantityBuyToCar">
+                <div class="lblQuuantityBuyToCar">
+                    <p>Cantidad</p>
+                </div>
+                <input class="txtQuantityBuyToCar" type="number" id="txtQuantityBuyToCar" min="1" value="1">
+            </div>
+            <div class="subdiv_btnsQuantityBuyToCar">
+                <button class="btnReturnQuantityBuyToCar" id="btnReturnQuantityBuyToCar">Cancelar</button>
+                <button class="btnAcceptQuantityBuyToCar" id="btnAcceptQuantityBuyToCar">Aceptar</button>
+            </div>
+        </div>
+    </article>
+    <!-- session-->
+    <article class="session" id="divSession">
+        <div class="sessionDescript">
+            <div class="divSession">
+                <div class="divsSession-perfil">
+                    <div class="divPerfil">
+                        <img class="img_ImgPerfil"
+                        src="img/session.png">
+                    </div>
+                </div>
+                <div class="divsSession-user">
+                    <div class="divUser">
+                        <input id="emailText" class="input" type="email" placeholder="Correo">
+                        <input id="passwordText" class="input" type="password" placeholder="Contraseña">
+                    </div>
+                </div>
+                <div class="divsSession-buttom">
+                    <div class="divButtom">
+                        <div class="divButtonsAuxiliar">
+                            <button class="passLock" id="btn_passLock">Olvide la contraseña</button>
+                            <button class="btnregister" id="btn_register">Registrarse</button>
+                        </div>
+                        <div class="divButtonIn">
+                            <button class="login" id="btn_login">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- registeer-->
+    <article class="register" id="divRegister">
+        <div class="registerDescript">
+            <input class="inputRegister" id="name" type="text" placeholder="Nombre Completo">
+            <input class="inputRegister" id="address" type="text" placeholder="Domicilio argentina">
+            <input class="inputRegister" id="phone" type="text" placeholder="Teléfono">
+            <input class="inputRegister" id="email" type="email" placeholder="Correo">
+            <input class="inputRegister" id="password" type="password" placeholder="Contraseña">
+            <input class="inputRegister" id="passwordConfirm" type="password" placeholder="Confirmar contraseña">
+            <div class="div_btnRegistar">
+                <button class="btnReturn" id="btnReturn">Volver</button>
+                <button class="btnConfirm" id="btnConfirm">Confirmar</button>
+            </div>
+        </div>
+    </article>
+    <!-- buyCar-->
+    <article class="buyCar"  id="buyCar">
+        <div class="buyCarDescript">
+            <div class="divisionbuyCar">
+                <h3 class="subtitlebuyCar">Compras pendientes</h3>
+                <div class="listbuyCar" id="listbuyCarPendient">
+                    
+                </div>
+            </div>
+            <div class="divisionbuyCar">
+                <h3 class="subtitlebuyCar">Compras realizadas</h3>
+                <div class="listbuyCar">
+                    <div class="divSuccess">
+                        <div class="subdivSuccess imgSuccess">
+                            <img class="imgSuccess-img">
+                        </div>
+                        <div class="subdivSuccess descriptSuccess">
+                            <div class="titleProductSuccess">
+                                <h2>Product name</h2>
+                            </div>
+                            <div class="descriptProductSuccess">
+                                <p>Descipt product</p>
+                            </div>
+                            <div class="subdivSuccess priceSuccess">
+                                <h3 class="h3PriceSuccess">$3829</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="totalPriceBuyCar">
+            <div class="subDiv_totalPriceBuyCar">
+                <div class="div_totalPrice">
+                    <h4 class="textTotalPrice">Total a pagar</h4>
+                    <h4 class="textTotalPrice totalPriceNumber">0</h4>
+                </div>
+                <div class="div_btnBuyTotalPrice">
+                    <button class="btnBuyTotalPrice">Buy</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- halertSession-->
+    <article class="alertSession" id="alertSession">
+        <div class="alertSessionTitle">
+            <h6 class="textalertSession">Por favor inice sesión para ingresar al carrito de compras</h6>
+        </div> 
+    </article>
+    <!-- registeerDataStroe-->
+    <article class="registerDataStore" id="registerDataStore">
+        <div class="registerDataStoreDescript">
+            <div class="subdivDataStoreFile">
+                <input class="filePresentationPhoto" id="filePresentationPhoto" type="file" accept=".jpg, .png, .jpeg">
+            </div>
+            <div class="subdivDataStoreAbout">
+                <textarea class="txtDataStore" id="txtDataStoreAbout" placeholder="Escriba aquí acerca de usted como persona y emprendedor" maxlength="100" id="txtAboutMe"></textarea>
+            </div>
+            <div class="subdivDataStoreWantKnow">
+                <textarea class="txtDataStore" id="txtDataStoreWantKnow" placeholder="Escriba aquí que información es valiosa para el cliente" maxlength="100" id="txtWatKnow"></textarea>
+            </div>
+            <div class="subdivDataStoreButton">
+                <button class="btnReturnDataStore" id="btnReturnDataStore">Retroceder</button>
+                <div class="div_labelSuccessInfoStore">
+                    <p class="labelSuccessInfoStore" id="labelSuccessInfoStore">Carga exitosa</p>
+                </div>
+                <button class="btnSendDataStore" id="btnSendDataStore">Enviar</button>
+            </div>
+        </div>
+    </article>
+    <!--Insert Product-->
+    <article class="insertProducts" id="insertProducts">
+        <div class="div_insertProducts">
+            <div class="dataInsertProduct">
+                <p class="lblfileImgProduct">Imagen del producto</p>
+                <input class="fileImgProduct" id="fileImgProduct" type="file" accept=".jpg, .png, .jpeg">
+            </div>
+            <div class="dataInsertProduct">
+                <textarea class="txtNameProduct" id="txtNameProduct" maxlength="50" placeholder="Nombre del producto"></textarea>
+            </div>
+            <div class="dataInsertProduct">
+                <textarea class="txtPriceProduct" id="txtPriceProduct" maxlength="50" placeholder="Precio del producto"></textarea>
+            </div>
+            <div class="dataInsertProduct">
+                <textarea class="txtDescriptProduct" id="txtDescriptProduct" maxlength="100" placeholder="Descripción del producto"></textarea>
+            </div>
+            <div class="dataInsertProduct">
+                <textarea class="txtQuantityProduct" id="txtQuantityProduct" maxlength="5" placeholder="Cantidades disponibles"></textarea>
+            </div>
+            <div class="btnInsertProduct">
+                <div class="subdiv_btnInsertProduct">
+                    <button class="btnReturnInsertProduct" id="btnReturnInsertProduct">Volver</button>
+                </div>
+                <div class="subdiv_lblInsertProduct">
+                    <p class="lblSuccessInsertProduct" id="lblSuccessInsertProduct">Producto agregado</p>
+                </div>
+                <div class="subdiv_btnInsertProduct">
+                    <button class="btnAcceptInsertProduct" id="btnAcceptInsertProduct">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Pendient Give Product-->
+    <article class="pendientGiveProduct" id="pendientGiveProduct">
+        <div class="list_pendientGiveProduct">
+            <div class="div_pendientProduct">
+                <div class="infoPendientProduct">
+                    <p class="lblInfoPendient lblNamePendientProduct">Name Product</p>
+                    <p class="lblInfoPendient lblNameClientToPendientProduct">Name Client</p>
+                    <p class="lblInfoPendient lblPhoneAddressClientPrendientProduct">phone Client</p>
+                    <p class="lblInfoPendient lblAddressClientPendientProduct">Address Client</p>
+                    <p class="lblInfoPendient lblEmailClientPendientProduct">Email Client</p>
+                </div>
+                <div class="checkPendientProdut">
+                    <button class="btnCheckSuccessPendientProduct">+</button>
+                </div>
+            </div>
+            <div class="div_pendientProduct">
+                <div class="infoPendientProduct">
+                    <p class="lblInfoPendient lblNamePendientProduct">Name Product</p>
+                    <p class="lblInfoPendient lblNameClientToPendientProduct">Name Client</p>
+                    <p class="lblInfoPendient lblPhoneAddressClientPrendientProduct">phone Client</p>
+                    <p class="lblInfoPendient lblAddressClientPendientProduct">Address Client</p>
+                    <p class="lblInfoPendient lblEmailClientPendientProduct">Email Client</p>
+                </div>
+                <div class="checkPendientProdut">
+                    <button class="btnCheckSuccessPendientProduct">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="divButton_listPendient">
+            <button class="btnReturn_pendientGiveProduct" id="btnReturn_pendientGiveProduct">Volver</button>
+        </div>
+    </article>
+    <!--List data Month-->
+    <article class="listDataMonth" id="listDataMonth">
+        <div class="subDiv_dataMonth">
+            <div class="divMonth">
+                <div class="divCount divCount_january" id="divCount_january">
+                    <p class="lettleMonth">E</p>
+                    <p class="lettleMonth">N</p>
+                    <p class="lettleMonth">E</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_february" id="divCount_february">
+                    <p class="lettleMonth">F</p>
+                    <p class="lettleMonth">E</p>
+                    <p class="lettleMonth">B</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_march" id="divCount_march">
+                    <p class="lettleMonth">M</p>
+                    <p class="lettleMonth">A</p>
+                    <p class="lettleMonth">R</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_april" id="divCount_april">
+                    <p class="lettleMonth">A</p>
+                    <p class="lettleMonth">B</p>
+                    <p class="lettleMonth">R</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_may" id="divCount_may">
+                    <p class="lettleMonth">M</p>
+                    <p class="lettleMonth">A</p>
+                    <p class="lettleMonth">Y</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_june" id="divCount_june">
+                    <p class="lettleMonth">J</p>
+                    <p class="lettleMonth">U</p>
+                    <p class="lettleMonth">N</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_july" id="divCount_july">
+                    <p class="lettleMonth">J</p>
+                    <p class="lettleMonth">U</p>
+                    <p class="lettleMonth">L</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_agoust" id="divCount_agoust">
+                    <p class="lettleMonth">A</p>
+                    <p class="lettleMonth">G</p>
+                    <p class="lettleMonth">O</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_september" id="divCount_september">
+                    <p class="lettleMonth">S</p>
+                    <p class="lettleMonth">E</p>
+                    <p class="lettleMonth">P</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_october" id="divCount_october">
+                    <p class="lettleMonth">O</p>
+                    <p class="lettleMonth">C</p>
+                    <p class="lettleMonth">T</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_november" id="divCount_november">
+                    <p class="lettleMonth">N</p>
+                    <p class="lettleMonth">O</p>
+                    <p class="lettleMonth">V</p>
+                </div>
+            </div>
+            <div class="divMonth">
+                <div class="divCount divCount_december" id="divCount_december">
+                    <p class="lettleMonth">D</p>
+                    <p class="lettleMonth">I</p>
+                    <p class="lettleMonth">C</p>
+                </div>
+            </div>
+        </div>
+        <div class="subDiv_dataCount">
+            <div class="div_btnDataMonth">
+                <button class="btnDataMonth" id="btnReturnDataMonth">Volver</button>
+            </div>
+            <div class="div_lblDataCount">
+                <p class="lblDataCount">Total vendido: $92003</p>    
+            </div>
+            <div class="div_btnDataMonth">
+                <button class="btnDataMonth" id="btnClearDataMonth">Limpiar</button>
+            </div>
+        </div>
+    </article>
+    <!--Count data month-->
+    <article class="divCount_dataMonth" id="divCount_dataMonth">
+        <div class="subDiv_countDataMonth">
+            <p class="dataMonth lblNameMonth" id="lblNameMonth"></p>
+            <p class="dataMonth lblPriceMonth" id="lblPriceMonth"></p>
+            <button class="dataMonth btnAcceptMonth" id="btnAcceptMonth">Aceptar</button>
+        </div>
+    </article>
+    <!--Menu Admin-->
+    <article class="menuAdmin" id="menuAdmin">
+        <div class="div_menuAdmin">
+            <div class="divitionAdmin">
+                <div class="subdivDivition_admin">
+                    <button class="btnAdmin" id="btnAdmin_InfoStore">Mi información</button>
+                </div>
+                <div class="subdivDivition_admin">
+                    <button class="btnAdmin" id="btnAdmin_Products">Mis productos</button>
+                </div>
+            </div>
+            <div class="divMenuAdmin_donation">
+                <div class="subDiv_Donation">
+
+                </div>
+                <div class="subDiv_Donation">
+                    <div class="divDonation">
+                        <button class="btnDonation">Brindar donación</button>
+                    </div>
+                </div>
+                <div class="subDiv_Donation">
+                    
+                </div>
+            </div>
+            <div class="divitionAdmin">
+                <div class="subdivDivition_admin">
+                    <button class="btnAdmin" id="btnAdmin_PendientList">Entregas pendientes</button>
+                </div>
+                <div class="subdivDivition_admin">
+                    <button class="btnAdmin" id="btnAdmin_dataMonth">Mis estadisticas</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <script src="js/scriptButtons.js"></script>
+    <script src="js/scriptDataBase.js"></script>
+    <script src="js/scriptProducts.js"></script>
+    <script src="js/scriptSession.js"></script>
+    <script src="js/scriptInfoStore.js"></script>
+    <script src="js/scriptButtonMenu.js"></script>
+    <script src="js/scriptButtonsDown.js"></script>
+    <script src="js/scriptButtonBuyCar.js"></script>
+    <script src="js/getInfoStore.js"></script>
+    <script src="js/scriptAddToCar.js"></script>
+    <script src="js/scriptBuyToCar.js"></script>
+    <script src="js/scriptButtonsAdmin.js"></script>
+    <script src="js/scriptDataMonth.js"></script>
+</body>
+</html>

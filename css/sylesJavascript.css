@@ -1,0 +1,20 @@
+
+/*Open close div principal image*/
+.divClose{
+    display: none;
+}
+.divOpen{
+    display: flex;
+}
+/*Animation change page*/
+.changeOpenPage{
+    animation: openPage 1s forwards;
+}
+@keyframes openPage{
+    0%{
+        display: none;
+    }
+    100%{
+        display: flex;
+    }
+}
